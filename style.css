@@ -1,0 +1,217 @@
+.container main .splits .cont-3, .container main .splits .cont-1 {
+  display: flex;
+  gap: 6em;
+}
+.container main .splits .cont-3 img, .container main .splits .cont-1 img {
+  border-radius: 1em 1em 0 1em;
+  box-shadow: -5px -5px 8px -5px #000000;
+}
+.container main .splits .cont-3 div, .container main .splits .cont-1 div {
+  display: grid;
+  padding: 0;
+}
+.container main .splits .cont-3 div :nth-child(1), .container main .splits .cont-1 div :nth-child(1) {
+  font-size: 1.8em;
+  font-weight: 800;
+}
+.container main .splits .cont-3 div :nth-child(2), .container main .splits .cont-1 div :nth-child(2) {
+  font-size: 0.96em;
+}
+.container main .splits .cont-3 div :nth-child(3), .container main .splits .cont-1 div :nth-child(3) {
+  font-size: 0.96em;
+}
+.container main .splits .cont-3 div :last-child, .container main .splits .cont-1 div :last-child {
+  width: 12em;
+  border: 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #fff;
+  background-color: #000;
+  border-radius: 0.4em;
+  transition: all 0.2s;
+}
+
+.container main .splits .cont-4, .container main .splits .cont-2 {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 8em;
+  gap: 6em;
+}
+.container main .splits .cont-4 img, .container main .splits .cont-2 img {
+  border-radius: 1em 1em 1em 0;
+  box-shadow: 5px -5px 8px -5px #000000;
+}
+.container main .splits .cont-4 div, .container main .splits .cont-2 div {
+  display: grid;
+  padding: 0;
+}
+.container main .splits .cont-4 div :nth-child(1), .container main .splits .cont-2 div :nth-child(1) {
+  font-size: 1.8em;
+  font-weight: 800;
+}
+.container main .splits .cont-4 div :nth-child(2), .container main .splits .cont-2 div :nth-child(2) {
+  font-size: 0.96em;
+}
+.container main .splits .cont-4 div :nth-child(3), .container main .splits .cont-2 div :nth-child(3) {
+  font-size: 0.96em;
+}
+.container main .splits .cont-4 div :last-child, .container main .splits .cont-2 div :last-child {
+  width: 12em;
+  border: 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #fff;
+  background-color: #000;
+  border-radius: 0.4em;
+  transition: all 0.2s;
+}
+
+.container main .frontal .dev-info :hover:last-child, .container main .splits .cont-3 div :hover:last-child, .container main .splits .cont-1 div :hover:last-child, .container main .splits .cont-4 div :hover:last-child, .container main .splits .cont-2 div :hover:last-child {
+  background-color: #cd3535;
+  border-color: #cd3535;
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+.container .heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 1em;
+}
+.container .heading .menu {
+  display: flex;
+}
+.container .heading .menu p {
+  padding: 0 1.2em;
+  transition: all 0.4s;
+}
+.container .heading .menu p a:link,
+.container .heading .menu p a:active,
+.container .heading .menu p a:visited {
+  color: #000;
+  text-decoration: none;
+}
+.container .heading .menu p a:link:hover,
+.container .heading .menu p a:active:hover,
+.container .heading .menu p a:visited:hover {
+  color: #fff;
+}
+.container .heading .menu p:hover {
+  cursor: pointer;
+  background-color: #cd3535;
+  border-radius: 0.4em;
+}
+.container .heading .menu p:hover a {
+  color: #fff;
+}
+.container .heading img {
+  width: 6em;
+  height: 2em;
+}
+.container main {
+  margin-bottom: 8em;
+}
+.container main .frontal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container main .frontal .dev-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container main .frontal .dev-info img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  margin-bottom: 1em;
+  box-shadow: 0 0 5px 0 #000;
+}
+.container main .frontal .dev-info :nth-child(2) {
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-bottom: 0.5em;
+}
+.container main .frontal .dev-info :nth-child(3) {
+  font-size: 1.6em;
+  font-weight: bold;
+}
+.container main .frontal .dev-info :nth-child(4) {
+  font-size: 0.8em;
+  margin-bottom: 2em;
+}
+.container main .frontal .dev-info :last-child {
+  padding: 0.5em 1em;
+  border-radius: 0.4em;
+  border: 0;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.container main .splits {
+  width: 90%;
+  margin: auto;
+}
+.container main .splits .cont-3 {
+  margin-top: 8em;
+}
+.container main .splits .letstalk {
+  display: flex;
+  gap: 6em;
+}
+.container main .splits .letstalk div {
+  display: grid;
+  margin: auto;
+  width: 50%;
+  justify-items: center;
+  margin-top: 8em;
+  padding: 0;
+}
+.container main .splits .letstalk div :nth-child(1) {
+  font-size: 1.8em;
+  font-weight: 800;
+}
+.container main .splits .letstalk div :nth-child(2) {
+  font-size: 0.96em;
+  margin-top: 1em;
+}
+.container main .splits .letstalk div :nth-child(3) {
+  font-size: 0.96em;
+  margin-top: 1em;
+}
+.container main .splits .letstalk div .icons {
+  display: flex;
+  justify-content: center;
+  margin: 1em 0 0 0;
+}
+.container main .splits .letstalk div .icons i {
+  display: grid;
+  margin: 0;
+  padding: 0 0.4em;
+  font-size: 1.2em;
+}
+.container main .splits .letstalk div .email {
+  text-align: center;
+  width: 50%;
+  margin-top: 2em;
+}

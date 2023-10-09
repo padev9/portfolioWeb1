@@ -1,0 +1,268 @@
+///////////////////////////////VARIABLES
+/// $variable
+
+///////////////////////////////EXTENDS
+/// %name @extend
+%odds {
+  display: flex;
+  gap: 6em;
+  // img
+  img {
+    border-radius: 1em 1em 0 1em;
+    box-shadow: -5px -5px 8px -5px #000000;
+  }
+  // div
+  div {
+    display: grid;
+    padding: 0;
+    // f-paragraph
+    :nth-child(1) {
+      font-size: 1.8em;
+      font-weight: 800;
+    }
+    :nth-child(2) {
+      font-size: 0.96em;
+    }
+    :nth-child(3) {
+      font-size: 0.96em;
+    }
+    :last-child {
+      width: 12em;
+      border: 0;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: #fff;
+      background-color: #000;
+      border-radius: 0.4em;
+      transition: all 0.2s;
+      //   on hover
+      @extend %hover-bg;
+    }
+  }
+}
+%even {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 8em;
+  gap: 6em;
+  // img
+  img {
+    border-radius: 1em 1em 1em 0;
+    box-shadow: 5px -5px 8px -5px #000000;
+  }
+  // div
+  div {
+    display: grid;
+    padding: 0;
+    // f-paragraph
+    :nth-child(1) {
+      font-size: 1.8em;
+      font-weight: 800;
+    }
+    :nth-child(2) {
+      font-size: 0.96em;
+    }
+    :nth-child(3) {
+      font-size: 0.96em;
+    }
+    :last-child {
+      width: 12em;
+      border: 0;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: #fff;
+      background-color: #000;
+      border-radius: 0.4em;
+      transition: all 0.2s;
+      //   on hover
+      @extend %hover-bg;
+    }
+  }
+}
+%hover-bg {
+  //   on hover
+  &:hover {
+    background-color: #cd3535;
+    border-color: #cd3535;
+    cursor: pointer;
+  }
+}
+///////////////////////////////MIXING
+/// @mixing @include
+///
+/// flex centered
+@mixin flex($just, $alg) {
+  display: flex;
+  justify-content: $just;
+  align-items: $alg;
+}
+// padding top bottom - let right
+@mixin ptb-plr($ptb, $plr) {
+  padding: $ptb $plr;
+}
+//global
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Poppins, sans-serif;
+}
+.container {
+  width: 90%;
+  margin: auto;
+  //   header
+  .heading {
+    @include flex($just: space-between, $alg: center);
+    @include ptb-plr($ptb: 1em, $plr: 1em);
+    // menu
+    .menu {
+      display: flex;
+      //   paragraphs
+      p {
+        padding: 0 1.2em;
+        transition: all 0.4s;
+        // a's
+        a:link,
+        a:active,
+        a:visited {
+          color: #000;
+          text-decoration: none;
+          &:hover {
+            color: #fff;
+          }
+        }
+        // on hover
+        &:hover {
+          a {
+            color: #fff;
+          }
+          cursor: pointer;
+          background-color: #cd3535;
+          border-radius: 0.4em;
+        }
+      }
+    }
+    //   image
+    img {
+      width: 6em;
+      height: 2em;
+    }
+  }
+  main {
+    margin-bottom: 8em;
+    //   frontal
+    .frontal {
+      @include flex($just: center, $alg: center);
+      min-height: 100vh;
+      // dev info
+      .dev-info {
+        @include flex($just: center, $alg: center);
+        flex-direction: column;
+        // image
+        img {
+          width: 140px;
+          height: 140px;
+          border-radius: 50%;
+          margin-bottom: 1em;
+          box-shadow: 0 0 5px 0 #000;
+        }
+        //   second child
+        :nth-child(2) {
+          font-size: 1.2em;
+          font-weight: 500;
+          margin-bottom: 0.5em;
+        }
+        //   third child
+        :nth-child(3) {
+          font-size: 1.6em;
+          font-weight: bold;
+        }
+        //   last paragraph
+        :nth-child(4) {
+          font-size: 0.8em;
+          margin-bottom: 2em;
+        }
+        //   button
+        :last-child {
+          @include ptb-plr($ptb: 0.5em, $plr: 1em);
+          border-radius: 0.4em;
+          border: 0;
+          font-size: 0.8em;
+          text-transform: uppercase;
+          background-color: #000;
+          color: #fff;
+          cursor: pointer;
+          transition: all 0.2s;
+          @extend %hover-bg;
+        }
+      }
+    }
+    // split container
+    .splits {
+      width: 90%;
+      margin: auto;
+      // cont 1
+      .cont-1 {
+        @extend %odds;
+      }
+      //   cont 2
+      .cont-2 {
+        @extend %even;
+      }
+      //   cont 3
+      .cont-3 {
+        margin-top: 8em;
+        @extend %odds;
+      }
+      //   cont 4
+      .cont-4 {
+        @extend %even;
+      }
+      .letstalk {
+        display: flex;
+        gap: 6em;
+        // div
+        div {
+          display: grid;
+          margin: auto;
+          width: 50%;
+          justify-items: center;
+          margin-top: 8em;
+          padding: 0;
+          // f-paragraph
+          :nth-child(1) {
+            font-size: 1.8em;
+            font-weight: 800;
+          }
+          :nth-child(2) {
+            font-size: 0.96em;
+            margin-top: 1em;
+          }
+          :nth-child(3) {
+            font-size: 0.96em;
+            margin-top: 1em;
+          }
+          //   icons
+          .icons {
+            display: flex;
+            justify-content: center;
+            margin: 1em 0 0 0;
+            i {
+              display: grid;
+              margin: 0;
+              padding: 0 0.4em;
+              font-size: 1.2em;
+            }
+          }
+          .email {
+            text-align: center;
+            width: 50%;
+            margin-top: 2em;
+          }
+        }
+      }
+    }
+  }
+}
