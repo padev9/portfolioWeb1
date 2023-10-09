@@ -23,6 +23,7 @@
 .container main .splits .cont-3 div :last-child, .container main .splits .cont-1 div :last-child {
   width: 12em;
   border: 0;
+  padding: 0.2em 1em;
   text-transform: uppercase;
   font-weight: 600;
   color: #fff;
@@ -58,6 +59,7 @@
 .container main .splits .cont-4 div :last-child, .container main .splits .cont-2 div :last-child {
   width: 12em;
   border: 0;
+  padding: 0.2em 1em;
   text-transform: uppercase;
   font-weight: 600;
   color: #fff;
