@@ -1,0 +1,808 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: auto;
+  max-width: 1420px;
+  font-family: Poppins, sans-serif;
+}
+
+.container main .splits .cont-3, .container main .splits .cont-1 {
+  display: flex;
+  border-radius: 2rem 0 0 2rem;
+  -moz-column-gap: 6em;
+       column-gap: 6em;
+}
+.container main .splits .cont-3 img, .container main .splits .cont-1 img {
+  border-radius: 1em 1em 0 1em;
+  box-shadow: -5px -5px 8px -5px #000000;
+}
+.container main .splits .cont-3 div, .container main .splits .cont-1 div {
+  display: grid;
+  grid-template-rows: auto 1fr 1fr auto;
+  row-gap: 1em;
+  margin-right: 1em;
+  height: 36.87vh;
+  padding: 0.5em 0;
+}
+.container main .splits .cont-3 div p, .container main .splits .cont-1 div p {
+  overflow: auto;
+}
+.container main .splits .cont-3 div :nth-child(1), .container main .splits .cont-1 div :nth-child(1) {
+  font-size: 1.8em;
+  font-weight: 800;
+}
+.container main .splits .cont-3 div :nth-child(2), .container main .splits .cont-1 div :nth-child(2) {
+  font-size: 0.96em;
+}
+.container main .splits .cont-3 div :nth-child(3), .container main .splits .cont-1 div :nth-child(3) {
+  font-size: 0.96em;
+}
+.container main .splits .cont-3 div :last-child, .container main .splits .cont-1 div :last-child {
+  width: 12em;
+  height: 4em;
+  border: 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #fff;
+  background-color: #000;
+  border-radius: 0.4em;
+  transition: all 0.2s;
+}
+
+.container main .splits .cont-4, .container main .splits .cont-2 {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 8em;
+  -moz-column-gap: 6em;
+       column-gap: 6em;
+}
+.container main .splits .cont-4 img, .container main .splits .cont-2 img {
+  border-radius: 1em 1em 1em 0;
+  box-shadow: 5px -5px 8px -5px #000000;
+}
+.container main .splits .cont-4 div, .container main .splits .cont-2 div {
+  display: grid;
+  grid-template-rows: auto 1fr 80px auto;
+  padding: 0;
+  height: 36.87vh;
+}
+.container main .splits .cont-4 div :nth-child(1), .container main .splits .cont-2 div :nth-child(1) {
+  font-size: 1.8em;
+  font-weight: 800;
+}
+.container main .splits .cont-4 div :nth-child(2), .container main .splits .cont-2 div :nth-child(2) {
+  font-size: 0.96em;
+}
+.container main .splits .cont-4 div :nth-child(3), .container main .splits .cont-2 div :nth-child(3) {
+  font-size: 0.96em;
+}
+.container main .splits .cont-4 div :last-child, .container main .splits .cont-2 div :last-child {
+  width: 12em;
+  border: 0;
+  padding: 0.2em 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #fff;
+  background-color: #000;
+  border-radius: 0.4em;
+  transition: all 0.2s;
+}
+
+.container main .splits .cont-3 div :hover:last-child, .container main .splits .cont-1 div :hover:last-child {
+  background-color: #fff;
+  border-color: #000;
+  color: #000;
+  cursor: pointer;
+}
+
+.container main .frontal .dev-info :hover:last-child, .container main .splits .cont-4 div :hover:last-child, .container main .splits .cont-2 div :hover:last-child {
+  background-color: #cd3535;
+  border-color: #cd3535;
+  cursor: pointer;
+}
+
+.container footer .r-side .icons, .container footer .l-side .menu, .container main .splits .letstalk div .icons {
+  display: flex;
+  justify-content: center;
+  margin: 1em 0 0 0;
+}
+.container footer .r-side .icons i, .container footer .l-side .menu i, .container main .splits .letstalk div .icons i {
+  display: grid;
+  margin: 0;
+  padding: 0 0.4em;
+  font-size: 1.2em;
+}
+
+.container footer .r-side, .container footer .l-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container footer .r-side .icons i {
+  transition: all 0.2s;
+}
+.container footer .r-side .icons i:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+.container .heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 1em;
+}
+.container .heading .menu {
+  display: flex;
+}
+.container .heading .menu p {
+  padding: 0 1.2em;
+  transition: all 0.4s;
+}
+.container .heading .menu p a:link,
+.container .heading .menu p a:active,
+.container .heading .menu p a:visited {
+  color: #000;
+  text-decoration: none;
+}
+.container .heading .menu p a:link:hover,
+.container .heading .menu p a:active:hover,
+.container .heading .menu p a:visited:hover {
+  color: #fff;
+}
+.container .heading .menu p:hover {
+  cursor: pointer;
+  background-color: #cd3535;
+  border-radius: 0.4em;
+}
+.container .heading .menu p:hover a {
+  color: #fff;
+}
+.container .heading .menu i,
+.container .heading .menu #menu-t {
+  display: none;
+}
+.container .heading .menu #menu-t {
+  position: relative;
+}
+.container .heading .menu #menu-t #menu-i {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 1.4em;
+  width: 160px;
+  height: 180px;
+  border-radius: 0.4em;
+  background-color: rgba(0, 0, 0, 0.4196078431);
+  position: absolute;
+  top: 0.2em;
+  right: -1.4em;
+  z-index: 1;
+}
+.container .heading .menu #menu-t #menu-i p {
+  display: block;
+}
+.container .heading .menu #menu-t #menu-i p a {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.1em;
+}
+.container .heading img {
+  width: 6em;
+  height: 2em;
+}
+.container main {
+  margin-bottom: 8em;
+}
+.container main .frontal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container main .frontal .dev-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container main .frontal .dev-info img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  margin-bottom: 1em;
+  box-shadow: 0 0 5px 0 #000;
+}
+.container main .frontal .dev-info :nth-child(2) {
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-bottom: 0.5em;
+}
+.container main .frontal .dev-info :nth-child(3) {
+  font-size: 1.6em;
+  font-weight: bold;
+}
+.container main .frontal .dev-info :nth-child(4) {
+  font-size: 0.8em;
+  margin-bottom: 2em;
+}
+.container main .frontal .dev-info :last-child {
+  padding: 0.5em 1em;
+  border-radius: 0.4em;
+  border: 0;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.container main .splits {
+  width: 90%;
+  margin: auto;
+}
+.container main .splits .cont-3 {
+  margin-top: 8em;
+}
+.container main .splits .letstalk {
+  display: flex;
+  row-gap: 6em;
+}
+.container main .splits .letstalk div {
+  display: grid;
+  margin: auto;
+  width: 50%;
+  justify-items: center;
+  margin-top: 8em;
+  padding: 0;
+}
+.container main .splits .letstalk div :nth-child(1) {
+  font-size: 1.8em;
+  font-weight: 800;
+}
+.container main .splits .letstalk div :nth-child(2) {
+  font-size: 0.96em;
+  margin-top: 1em;
+}
+.container main .splits .letstalk div :nth-child(3) {
+  font-size: 0.96em;
+  margin-top: 1em;
+}
+.container main .splits .letstalk div .icons i {
+  cursor: pointer;
+}
+.container main .splits .letstalk div .email {
+  text-align: center;
+  width: 50%;
+  margin-top: 2em;
+}
+.container footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em 2em;
+  background-color: #cd3535;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.container footer .l-side .menu {
+  margin: 0;
+}
+.container footer .l-side .menu p {
+  padding: 0 1em;
+}
+.container footer .l-side .menu p a,
+.container footer .l-side .menu p a:active,
+.container footer .l-side .menu p a:link,
+.container footer .l-side .menu p a:visited {
+  text-decoration: none;
+  color: #000;
+  transition: all 0.2s;
+}
+.container footer .l-side .menu p a:hover,
+.container footer .l-side .menu p a:active:hover,
+.container footer .l-side .menu p a:link:hover,
+.container footer .l-side .menu p a:visited:hover {
+  color: #fff;
+}
+.container footer .r-side .icons {
+  margin: 0;
+}
+@media screen and (max-width: 1228px) {
+  .container {
+    margin: auto;
+  }
+  .container main .splits {
+    margin: auto;
+  }
+  .container main .splits .cont-1 {
+    display: flex;
+    border-radius: 2rem 0 0 2rem;
+    -moz-column-gap: 4em;
+         column-gap: 4em;
+  }
+  .container main .splits .cont-1 img {
+    border-radius: 1em 1em 0 1em;
+    box-shadow: -5px -5px 8px -5px #000000;
+  }
+  .container main .splits .cont-1 div {
+    display: flex;
+    flex-direction: column;
+    height: 36.87vh;
+    padding: 0.5em 0;
+  }
+  .container main .splits .cont-1 div p {
+    overflow-y: scroll;
+  }
+  .container main .splits .cont-1 div :nth-child(1) {
+    margin-top: 0;
+    overflow-y: hidden;
+  }
+  .container main .splits .cont-1 div :nth-child(2) {
+    margin-top: 0;
+    border-radius: 0.4em;
+    padding: 0.4em 0;
+  }
+  .container main .splits .cont-1 div :nth-child(3) {
+    margin-top: 0;
+    border-radius: 0.4em;
+    padding: 0.4em 0;
+  }
+  .container main .splits .cont-1 div :last-child {
+    margin-top: 0.5em;
+    height: 4em;
+  }
+  .container main .splits .cont-1 div :last-child:hover {
+    background-color: #fff;
+    border-color: #000;
+    color: #000;
+    cursor: pointer;
+  }
+  .container main .splits .cont-2 {
+    display: flex;
+    border-radius: 2rem 0 0 2rem;
+    -moz-column-gap: 4em;
+         column-gap: 4em;
+  }
+  .container main .splits .cont-2 img {
+    border-radius: 1em 1em 0 1em;
+    box-shadow: -5px -5px 8px -5px #000000;
+  }
+  .container main .splits .cont-2 div {
+    display: flex;
+    flex-direction: column;
+    height: 36.87vh;
+    padding: 0.5em 0;
+  }
+  .container main .splits .cont-2 div p {
+    overflow-y: scroll;
+  }
+  .container main .splits .cont-2 div :nth-child(1) {
+    margin-top: 0;
+    overflow-y: hidden;
+  }
+  .container main .splits .cont-2 div :nth-child(2) {
+    margin-top: 0;
+    border-radius: 0.4em;
+    padding: 0.4em 0;
+  }
+  .container main .splits .cont-2 div :nth-child(3) {
+    margin-top: 0;
+    border-radius: 0.4em;
+    padding: 0.4em 0;
+  }
+  .container main .splits .cont-2 div :last-child {
+    margin-top: 0.5em;
+    height: 4em;
+  }
+  .container main .splits .cont-2 div :last-child:hover {
+    background-color: #fff;
+    border-color: #000;
+    color: #000;
+    cursor: pointer;
+  }
+  .container main .splits .cont-3 {
+    display: flex;
+    border-radius: 2rem 0 0 2rem;
+    -moz-column-gap: 4em;
+         column-gap: 4em;
+  }
+  .container main .splits .cont-3 img {
+    border-radius: 1em 1em 0 1em;
+    box-shadow: -5px -5px 8px -5px #000000;
+  }
+  .container main .splits .cont-3 div {
+    display: flex;
+    flex-direction: column;
+    height: 36.87vh;
+    padding: 0.5em 0;
+  }
+  .container main .splits .cont-3 div p {
+    overflow-y: scroll;
+  }
+  .container main .splits .cont-3 div :nth-child(1) {
+    margin-top: 0;
+    overflow-y: hidden;
+  }
+  .container main .splits .cont-3 div :nth-child(2) {
+    margin-top: 0;
+    border-radius: 0.4em;
+    padding: 0.4em 0;
+  }
+  .container main .splits .cont-3 div :nth-child(3) {
+    margin-top: 0;
+    border-radius: 0.4em;
+    padding: 0.4em 0;
+  }
+  .container main .splits .cont-3 div :last-child {
+    margin-top: 0.5em;
+    height: 4em;
+  }
+  .container main .splits .cont-3 div :last-child:hover {
+    background-color: #fff;
+    border-color: #000;
+    color: #000;
+    cursor: pointer;
+  }
+  .container main .splits .cont-4 {
+    display: flex;
+    border-radius: 2rem 0 0 2rem;
+    -moz-column-gap: 4em;
+         column-gap: 4em;
+  }
+  .container main .splits .cont-4 img {
+    border-radius: 1em 1em 0 1em;
+    box-shadow: -5px -5px 8px -5px #000000;
+  }
+  .container main .splits .cont-4 div {
+    display: flex;
+    flex-direction: column;
+    height: 36.87vh;
+    padding: 0.5em 0;
+  }
+  .container main .splits .cont-4 div p {
+    overflow-y: scroll;
+  }
+  .container main .splits .cont-4 div :nth-child(1) {
+    margin-top: 0;
+    overflow-y: hidden;
+  }
+  .container main .splits .cont-4 div :nth-child(2) {
+    margin-top: 0;
+    border-radius: 0.4em;
+    padding: 0.4em 0;
+  }
+  .container main .splits .cont-4 div :nth-child(3) {
+    margin-top: 0;
+    border-radius: 0.4em;
+    padding: 0.4em 0;
+  }
+  .container main .splits .cont-4 div :last-child {
+    margin-top: 0.5em;
+    height: 4em;
+  }
+  .container main .splits .cont-4 div :last-child:hover {
+    background-color: #fff;
+    border-color: #000;
+    color: #000;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .container {
+    margin: auto;
+  }
+  .container .heading .menu p,
+  .container .heading .menu #menu-t {
+    display: none;
+  }
+  .container .heading .menu i {
+    display: block;
+    font-size: 2em;
+    margin-right: -2em;
+  }
+  .container main .splits {
+    margin: auto;
+  }
+  .container main .splits .cont-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem 0 0 2rem;
+    gap: 2em;
+    margin-top: 4em;
+  }
+  .container main .splits .cont-1 img {
+    width: 400px;
+    height: auto;
+    border-radius: 1em 1em 0 1em;
+    box-shadow: -5px -5px 8px -5px #000000;
+  }
+  .container main .splits .cont-1 div {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 1em;
+    height: auto;
+    padding: 0.5em 0;
+  }
+  .container main .splits .cont-1 div p {
+    overflow-y: scroll;
+  }
+  .container main .splits .cont-1 div :nth-child(1) {
+    margin-top: 0;
+    overflow-y: hidden;
+  }
+  .container main .splits .cont-1 div :nth-child(2) {
+    margin-top: 0;
+    border-radius: 0.4em;
+    padding: 0.4em 0;
+  }
+  .container main .splits .cont-1 div :nth-child(3) {
+    margin-top: 0;
+    border-radius: 0.4em;
+    padding: 0.4em 0;
+  }
+  .container main .splits .cont-1 div :last-child {
+    margin-top: 0.5em;
+    height: 4em;
+  }
+  .container main .splits .cont-1 div :last-child:hover {
+    background-color: #fff;
+    border-color: #000;
+    color: #000;
+    cursor: pointer;
+  }
+  .container main .splits .cont-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem 0 0 2rem;
+    gap: 2em;
+    margin-top: 4em;
+  }
+  .container main .splits .cont-2 img {
+    width: 400px;
+    height: auto;
+    border-radius: 1em 1em 0 1em;
+    box-shadow: -5px -5px 8px -5px #000000;
+  }
+  .container main .splits .cont-2 div {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 1em;
+    height: auto;
+    padding: 0.5em 0;
+  }
+  .container main .splits .cont-2 div p {
+    overflow-y: scroll;
+  }
+  .container main .splits .cont-2 div :nth-child(1) {
+    margin-top: 0;
+    overflow-y: hidden;
+  }
+  .container main .splits .cont-2 div :nth-child(2) {
+    margin-top: 0;
+    border-radius: 0.4em;
+    padding: 0.4em 0;
+  }
+  .container main .splits .cont-2 div :nth-child(3) {
+    margin-top: 0;
+    border-radius: 0.4em;
+    padding: 0.4em 0;
+  }
+  .container main .splits .cont-2 div :last-child {
+    margin-top: 0.5em;
+    height: 4em;
+  }
+  .container main .splits .cont-2 div :last-child:hover {
+    background-color: #fff;
+    border-color: #000;
+    color: #000;
+    cursor: pointer;
+  }
+  .container main .splits .cont-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem 0 0 2rem;
+    gap: 2em;
+    margin-top: 4em;
+  }
+  .container main .splits .cont-3 img {
+    width: 400px;
+    height: auto;
+    border-radius: 1em 1em 0 1em;
+    box-shadow: -5px -5px 8px -5px #000000;
+  }
+  .container main .splits .cont-3 div {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 1em;
+    height: auto;
+    padding: 0.5em 0;
+  }
+  .container main .splits .cont-3 div p {
+    overflow-y: scroll;
+  }
+  .container main .splits .cont-3 div :nth-child(1) {
+    margin-top: 0;
+    overflow-y: hidden;
+  }
+  .container main .splits .cont-3 div :nth-child(2) {
+    margin-top: 0;
+    border-radius: 0.4em;
+    padding: 0.4em 0;
+  }
+  .container main .splits .cont-3 div :nth-child(3) {
+    margin-top: 0;
+    border-radius: 0.4em;
+    padding: 0.4em 0;
+  }
+  .container main .splits .cont-3 div :last-child {
+    margin-top: 0.5em;
+    height: 4em;
+  }
+  .container main .splits .cont-3 div :last-child:hover {
+    background-color: #fff;
+    border-color: #000;
+    color: #000;
+    cursor: pointer;
+  }
+  .container main .splits .cont-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem 0 0 2rem;
+    gap: 2em;
+    margin-top: 4em;
+  }
+  .container main .splits .cont-4 img {
+    width: 400px;
+    height: auto;
+    border-radius: 1em 1em 0 1em;
+    box-shadow: -5px -5px 8px -5px #000000;
+  }
+  .container main .splits .cont-4 div {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 1em;
+    height: auto;
+    padding: 0.5em 0;
+  }
+  .container main .splits .cont-4 div p {
+    overflow-y: scroll;
+  }
+  .container main .splits .cont-4 div :nth-child(1) {
+    margin-top: 0;
+    overflow-y: hidden;
+  }
+  .container main .splits .cont-4 div :nth-child(2) {
+    margin-top: 0;
+    border-radius: 0.4em;
+    padding: 0.4em 0;
+  }
+  .container main .splits .cont-4 div :nth-child(3) {
+    margin-top: 0;
+    border-radius: 0.4em;
+    padding: 0.4em 0;
+  }
+  .container main .splits .cont-4 div :last-child {
+    margin-top: 0.5em;
+    height: 4em;
+  }
+  .container main .splits .cont-4 div :last-child:hover {
+    background-color: #fff;
+    border-color: #000;
+    color: #000;
+    cursor: pointer;
+  }
+  .container main .splits .letstalk {
+    display: flex;
+    row-gap: 6em;
+  }
+  .container main .splits .letstalk div {
+    display: grid;
+    margin: auto;
+    width: 50%;
+    justify-items: center;
+    text-align: center;
+    margin-top: 6em;
+    padding: 0;
+  }
+  .container main .splits .letstalk div :nth-child(1) {
+    font-size: 1.8em;
+    font-weight: 800;
+  }
+  .container main .splits .letstalk div :nth-child(2) {
+    font-size: 0.96em;
+    margin-top: 1em;
+  }
+  .container main .splits .letstalk div :nth-child(3) {
+    font-size: 0.96em;
+    margin-top: 1em;
+  }
+  .container main .splits .letstalk div .icons {
+    display: flex;
+    justify-content: center;
+    margin: 1em 0 0 0;
+  }
+  .container main .splits .letstalk div .icons i {
+    display: grid;
+    margin: 0;
+    padding: 0 0.4em;
+    font-size: 1.2em;
+  }
+  .container main .splits .letstalk div .icons i {
+    cursor: pointer;
+  }
+  .container main .splits .letstalk div .email {
+    text-align: center;
+    width: 50%;
+    margin-top: 2em;
+  }
+  .container main .letstalk .email {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 830px) {
+  .container main .letstalk .email {
+    display: flex;
+    justify-content: center;
+  }
+  .container footer .l-side,
+  .container footer .r-side {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.4em;
+  }
+}
+@media screen and (max-width: 751px) {
+  .container {
+    margin: auto;
+  }
+  .container main .dev-info p {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 570px) {
+  footer .l-side #p1 {
+    display: none;
+  }
+  footer .l-side .menu {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.4em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .container {
+    margin: auto;
+  }
+  .container main .splits div img {
+    width: 100% !important;
+  }
+  .container main .letstalk div {
+    display: flex;
+    justify-content: center;
+  }
+  .container main .letstalk .email {
+    display: flex;
+    justify-content: center;
+  }
+}
