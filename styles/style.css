@@ -761,6 +761,12 @@ body {
   }
 }
 @media screen and (max-width: 830px) {
+  .container {
+    width: 100%;
+  }
+  .container .heading #menu-icon {
+    margin-right: 0.1em;
+  }
   .container main .letstalk .email {
     display: flex;
     justify-content: center;
