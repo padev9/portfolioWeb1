@@ -25,17 +25,20 @@
     p {
       overflow: auto;
     }
-    // f-paragraph
+    // p1
     :nth-child(1) {
       font-size: 1.8em;
       font-weight: 800;
     }
+    // p2
     :nth-child(2) {
       font-size: 0.96em;
     }
+    // p3
     :nth-child(3) {
       font-size: 0.96em;
     }
+    // button
     :last-child {
       width: 12em;
       height: 4em;
@@ -80,8 +83,8 @@
     }
     :last-child {
       width: 12em;
+      height: 4em;
       border: 0;
-      padding: 0.2em 1rem;
       text-transform: uppercase;
       font-weight: 600;
       color: #fff;
